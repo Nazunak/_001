@@ -21,6 +21,18 @@
 }
 .form-banner__button {
     margin-bottom: 24px;
+    &::before {
+        position: absolute;
+        content: url('/src/img/banner/1.png');
+        top: 202px;
+        left: 0;
+    }
+    &::after {
+        position: absolute;
+        content: url('/src/img/banner/2.png');
+        top: 109px;
+        right: 0;
+    }
 }
 .form-banner__but {
     color: #2E363E;
@@ -101,9 +113,4 @@
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 24px */
-}
-
-.catalog {
-    background-color: #2E363E;
-    height: 20px;
 }
