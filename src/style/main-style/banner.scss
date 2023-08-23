@@ -1,0 +1,109 @@
+.main {
+}
+.banner {
+    background: url('/src/img/banner/bg.png') 0 0/100% auto no-repeat;
+    height: 100%;
+}
+.container {
+}
+.banner__block {
+}
+.banner__form {
+    padding-top: 307px;
+    padding-bottom: 465px;
+}
+@media (max-width: 1150) { 
+    .banner__form {
+        padding-top: calc(50px + (307 - 50) * ((100vw - 320px) / (1150 - 320)));
+    }
+}
+.form-banner {
+}
+.form-banner__button {
+    margin-bottom: 24px;
+}
+.form-banner__but {
+    color: #2E363E;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 5px;
+    background: #F2F6FA;
+    &:hover {
+        background: #8ebcee;
+        color: #ffffff;
+    }
+}
+.form-banner__text {
+    margin-bottom: 24px;
+}
+.form-banner__p {
+    font-family: 'Montserrat';
+    font-size: clamp(rem(32), vw(48), rem(48));
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1px;
+    color: #fff;
+}
+.form-banner__subtext {
+    margin-bottom: 40px;
+}
+.form-banner__span {
+    color:  #FFF;
+    font-family: 'Montserrat';
+    // font-size: clamp(rem(26), vw(24), rem(24));
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%; /* 34.32px */
+}
+.form-banner__catalog {
+    gap: 20px;
+    display: flex;
+}
+.form-banner__catalog-but {
+}
+.button {
+    color: #2E363E;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 152%; /* 27.36px */
+    border-radius: 8px;
+    background: #FED84C;
+    padding: 30px 50px;
+    &:hover {
+        background: #f7c616;
+        color: #ffffff;
+    }
+
+}
+.form-banner__catalog-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.banner-info {
+}
+.banner-info__p {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 24px */
+}
+
+.catalog {
+    background-color: #2E363E;
+    height: 20px;
+}

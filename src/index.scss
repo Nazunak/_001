@@ -2,4 +2,6 @@
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/style';
-@import './style/nullstyle'
+@import './style/nullstyle';
+@import './style/main-style/header.scss';
+@import './style/main-style/banner.scss';
