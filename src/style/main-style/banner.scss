@@ -7,14 +7,28 @@
 .container {
 }
 .banner__block {
+    &::before {
+        position: absolute;
+        content: url('/src/img/banner/leaf.png');
+        top: 922px;
+        left: 0;
+    }
+    &::after {
+        position: absolute;
+        content: url('/src/img/banner/3.png');
+        top: 871px;
+        right: 173.59px;
+    }
 }
 .banner__form {
     padding-top: 307px;
     padding-bottom: 465px;
+
 }
-@media (max-width: 1150) { 
+@media (max-width: 1440) { 
     .banner__form {
-        padding-top: calc(50px + (307 - 50) * ((100vw - 320px) / (1150 - 320)));
+        padding-top: calc(50px + (307 - 50) * ((100vw - 320px) / (1440 - 320)));
+        padding-bottom: calc(50px + (465 - 50) * ((100vw - 320px) / (1440 - 320)));
     }
 }
 .form-banner {
