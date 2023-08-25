@@ -21,17 +21,11 @@
     }
 }
 .banner__form {
+}
+
+.form-banner {
     padding-top: 307px;
     padding-bottom: 465px;
-
-}
-@media (max-width: 1440) { 
-    .banner__form {
-        padding-top: calc(50px + (307 - 50) * ((100vw - 320px) / (1440 - 320)));
-        padding-bottom: calc(50px + (465 - 50) * ((100vw - 320px) / (1440 - 320)));
-    }
-}
-.form-banner {
 }
 .form-banner__button {
     margin-bottom: 24px;
@@ -127,4 +121,200 @@
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 24px */
+}
+.block-banner__footer {
+    display: none;
+}
+
+@media (max-width: 1441px) { 
+    .form-banner {
+        // padding-top: calc(50px + (307 - 50) * ((100vw - 320px) / (1440 - 320)));
+        // padding-bottom: calc(50px + (465 - 50) * ((100vw - 320px) / (1440 - 320)));
+        padding-top: 240px;
+        padding-bottom: 310px;
+    }
+    .form-banner__button::before {
+        left: -40px;
+    }
+    .banner__block::before {
+        top: 660px;
+    }
+    .banner__block::after {
+        top: 686px;
+        right: 100px;
+    }
+    .catalog__block::before{
+        top: 175px;
+        left: -15px;
+    }
+    .catalog__block::after {
+        right: 15px;
+    }
+}
+
+@media (max-width: 1025px) { 
+    .tell-header__span {
+        font-size: 16px;
+    }
+    .link-header__a {
+        font-size: 16px;
+    }
+    .adress-header__p{
+        font-size: 12px;
+    }
+    .header-block__logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .form-banner {
+        padding-top: 170px;
+        padding-bottom: 175px;
+    }
+    .form-banner__button::before {
+        display: none;
+    }
+    .banner__block::before {
+        display: none;
+    }
+    .banner__block::after {
+        display: none;
+    }
+    .catalog__block::before{
+        top: 175px;
+        left: -15px;
+    }
+    .catalog__block::after {
+        right: 15px;
+    }
+    .block-catalog__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .form-banner__button::after {
+        display: none;
+    }
+    .form-banner__span {
+        font-size: 19px;
+    }
+    .form-banner__subtext {
+        margin-bottom: 20px;
+    }
+    .button {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 769px) {
+    .block-catalog__item {
+        width: 40%;
+    }
+    .item-catalog__img {
+        width: 100%;
+    }
+    .item-catalog__bot-h3 {
+        font-size: 21px;
+    }
+    .item-catalog__bot-p {
+        font-size: 14px;
+    }
+    .item-catalog__bot-span {
+        font-size: 21px;
+        margin-top: 14px;
+    }
+    .item-catalog__bot-button{
+        padding: 15px 30px;
+    }
+    .item-catalog__bot {
+        padding: 40px 30px;
+    }
+    .catalog__block::before {
+        display: none;
+    }
+    .catalog__block::after {
+        display: none;
+    }
+    .block-catalog__text {
+        margin-bottom: 40px;
+    }
+    .form-banner {
+        padding-top: 125px;
+        padding-bottom: 130px;
+    }
+    .form-banner__span {
+        font-size: 14px; 
+    }
+    .tell-header__span {
+        font-size: 14px;
+    }
+    .tell-header__p {
+        font-size: 11px;
+    }
+    .form-banner__button {
+        margin-bottom: 10px;
+    }
+    .form-banner__text {
+        margin-bottom: 10px;
+    }
+    .button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .banner-info__p {
+        font-size: 11px;
+    }
+    .form-banner__but {
+        padding: 5px 13px;
+        font-size: 10px;
+    }
+    .link-header__a {
+        font-size: 18px;
+    }
+    .item-catalog__bot-p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 426px) {
+    .banner {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,39,117,0.6755077030812324) 100%, rgba(1,6,18,1) 100%);
+    }
+    .header-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-block__info {
+        gap: 0;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    .header-block__logo {
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+    .block-banner__footer {
+        display: block;
+    }
+    .block-banner__footer img {
+        width: 100%;
+    }
+    .form-banner {
+        padding-top: 157px;
+        padding-bottom: 70px;
+    }
+    .block-catalog__item {
+        width: 100%;
+    }
+    .header__adress {
+        gap: 5px;
+    }
+    .tell-header__span {
+        font-size: 12px;
+    }
+    .tell-header__p {
+        font-size: 9px;
+    }
+    .adress-header__p {
+        font-size: 9px;
+    }
 }
