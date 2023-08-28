@@ -2,6 +2,7 @@
     background: #081130;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .order__top-picture img {
     width: 100%;
@@ -11,46 +12,19 @@
 .order__block {
     display: flex;
     justify-content: right;
-    gap: 84px;
+    // gap: 84px;
+    padding-top: 109px;
+    padding-bottom: 459px;
 }
 .order__tell {
     position: absolute;
     bottom: 0;
     left: -60px;
+    height: 74%;
 }
-.block-order {
-}
-.block-order__tell-photo {
-}
-.block-order__tell-img {
-}
-.banner__form {
-}
-.form-banner {
-}
-.form-banner__button {
-}
-.form-banner__but {
-}
-.form-banner__text {
-}
-.form-banner__p {
-}
-.form-banner__subtext {
-}
-.form-banner__span {
-}
-.form-banner__catalog {
-}
-.form-banner__catalog-but {
-}
-.button {
-}
-.form-banner__catalog-info {
-}
-.banner-info {
-}
-.banner-info__p {
+.order__tell img {
+    height: 100%;
+    object-fit: cover;
 }
 .order__bot-picture img {
     width: 100%;
@@ -60,8 +34,9 @@
     z-index: 2;
 }
 .order-form {
-    padding-top: 109px;
-    padding-bottom: 459px;
+    padding: 15px;
+    z-index: 2;
+    background: #0811306b;
 }
 .banner-info_none {
     display: none;
@@ -72,5 +47,37 @@
     }
     &::before {
         display: none;
+    }
+}
+
+@media (max-width: 1441px) {
+    .order-form {
+        padding-top: 80px;
+        padding-bottom: 265px;
+        height: 100%;
+    }
+    .order__block {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .order__tell {
+        height: 68%;
+    }
+}
+@media (max-width: 1025px) {
+    .order__tell {
+        height: 75%;
+    }
+    .order__block {
+        padding-bottom: 41px;
+    }
+}
+@media (max-width: 426px) {
+    .order__block {
+        padding-bottom: 11px;
+    }
+    .order-form {
+        padding-bottom: 152px;
+        padding-top: 27px;
     }
 }
