@@ -4,6 +4,7 @@
 }
 .cook__block {
     display: flex;
+    justify-content: space-between;
 }
 .banner__form {
 }
@@ -44,30 +45,167 @@
 }
 .cook__photo-img {
     height: 100%;
-    width: 100%;
 }
 .cook__photo-img img {
     height: 100%;
     object-fit: cover;
-    position: relative;
-    z-index: 1;
 }
 .cook__circle {
-    background: #FED84C;
-    width: 580px;
-    height: 580px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 .cook__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cook__photo-elements {
+    position: absolute;
+    left: -80px;
+    top: 64%;
 }
 .cook__name {
+    width: max-content;
+    position: relative;
 }
 .cook__name-p {
+    padding: 15px 0 16px 0;
+    background: #2E363E;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    &::before {
+        content: url('/src/img/cook/Rectangle.png');
+        position: absolute;
+        left: -23px;
+        top: 0;
+    }
+    &::after {
+        content: url('/src/img/cook/Rectangle\ \(1\).png');
+        position: absolute;
+        right: -23px;
+        top: 0;
+    }
 }
 .cook__job {
+    width: max-content;
+    position: relative;
+    padding-left: 10px;
 }
 .cook__job-p {
+    padding: 15px 0 15px 0;
+    background: #F2F6FA;
+    color: var(--1, #2E363E);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &::before {
+        content: url('/src/img/cook/Rectangle\ \(2\).png');
+        position: absolute;
+        left: -12px;
+        bottom: -5px;
+    }
+    &::after {
+        content: url('/src/img/cook/Rectangle\ \(3\).png');
+        position: absolute;
+        right: -23px;
+        bottom: -5px;
+    }
 }
+.cook__p {
+    color: #2E363E;
+    /* Заголовки / 48 px, Medium */
+    font-family: 'Montserrat';
+    font-size: clamp(rem(32), vw(48), rem(48));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1px;
+}
+.cook__list li {
+    margin-bottom: 30px;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.cook__list p {
+    color: #2E363E;
+    /* Текст / 18px, Regular */
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 27px */
+    padding-left: 22px;
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #5D6AFB;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+}
+.cook-form {
+    padding: 97px 15px 15px 15px;
+}
+@media (max-width: 1441px) {
+    .cook-form {
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+    .cook__list p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1025px) {
+    .cook__photo-element {
+        display: flex;
+        justify-content: center;
+        height: 85%;
+    }
+    .cook__photo-elements {
+        position: absolute;
+        left: 30%;
+        top: 75%;
+    }
+}
+@media (max-width: 769px) {
+    .cook__photo-element {
+        display: flex;
+        justify-content: center;
+        height: 65%;
+    }
+    .cook__photo-elements {
+        position: absolute;
+        left: 30%;
+        top: 75%;
+    }
+    .cook__photo img {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .cook__photo-img {
+        width: 87%;
+        height: 100%;
+    }
+    .cook-form {
+        padding-top: 97px;
+    }
+    .cook__photo {
+        width: 46%;
+    }
+}
+
