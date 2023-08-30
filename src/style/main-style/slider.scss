@@ -1,0 +1,122 @@
+.slider {
+    width: 100%;
+    background: #081130;
+}
+.slider__top-photo {
+}
+.slider__top-img {
+    width: 100%;
+}
+.container {
+}
+.slider__title {
+    margin-bottom: 80px;
+}
+.slider__title-p {
+color: #FFF;
+text-align: center;
+/* Заголовки / 48 px, Medium */
+font-family: 'Montserrat';
+font-size: clamp(rem(32), vw(48), rem(48));
+font-style: normal;
+font-weight: 500;
+line-height: 1.25; /* 125% */
+letter-spacing: -1px;
+}
+.slider__block {
+}
+.feedback__slider {
+}
+.feedback__swiper {
+}
+.feedback__slide {
+    background: #fff;
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+    padding: 70px 0;
+}
+.feedback__slide-left {
+    max-width: 460px;
+}
+.slide-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.slide-left__photo {
+}
+.slide-left__photo-img {
+}
+.slide-left__title {
+}
+.slide-left__title-h3 {
+    color:  #2E363E;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.43; /* 42.9px */
+}
+.slide-left__text {
+}
+.slide-left__text-p {
+    color: #2E363E;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    // font-size: clamp(rem(15), vw(32), rem(32));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7; /* 25.5px */
+}
+.slide-left__href {
+}
+.slide-left__href-a {
+    color: #4A94FF;
+    /* Текст / 14px, Regular */
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 21px */
+    &:hover {
+        color: #3180ee;
+    }
+}
+.feedback__slide-right {
+}
+.slide-right {
+    // flex: 1 0 40%;
+}
+.slide-right-photo {
+    margin-bottom: 30px;
+}
+.slide-right-photo-img {
+}
+.slide-right-name {
+    text-align: center;
+}
+.slide-right-name-p {
+    color: #2E363E;
+    text-align: center;
+    /* Текст / 21px, Medium */
+    font-family: 'Montserrat';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.43; /* 30.03px */
+}
+.slide-right-name-span {
+    color:  #A6AEB6;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7; /* 27.2px */
+}
+.slider__bot-photo{
+}
+.slider__bot-img {
+    width: 100%;
+}

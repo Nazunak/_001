@@ -1,45 +1,9 @@
-.cook {
-}
-.container {
-}
+
 .cook__block {
     display: flex;
     justify-content: space-between;
 }
-.banner__form {
-}
-.form-banner {
-}
-.order-form {
-}
-.form-banner__button {
-}
-.form-banner__button_none {
-}
-.form-banner__but {
-}
-.form-banner__text {
-}
-.form-banner__p {
-}
-.form-banner__subtext {
-}
-.form-banner__span {
-}
-.form-banner__catalog {
-}
-.form-banner__catalog-but {
-}
-.button {
-}
-.form-banner__catalog-info {
-}
-.banner-info {
-}
-.banner-info_none {
-}
-.banner-info__p {
-}
+
 .cook__photo {
     position: relative;
 }
@@ -189,8 +153,8 @@
     }
     .cook__photo-elements {
         position: absolute;
-        left: 30%;
-        top: 75%;
+        left: 17%;
+        top: 62%;
     }
     .cook__photo img {
         width: 100%;
@@ -198,7 +162,7 @@
         overflow-x: hidden;
     }
     .cook__photo-img {
-        width: 87%;
+        width: 81%;
         height: 100%;
     }
     .cook-form {
@@ -206,6 +170,38 @@
     }
     .cook__photo {
         width: 46%;
+    }
+    .cook__list li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 426px) {
+    .cook__block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cook-form {
+        padding-top: 100px;
+    }
+    .cook__photo {
+        width: 70%;
+    }
+    .cook__photo-elements {
+        left: 10%;
+        top: 75%;
+    }
+    .cook__photo {
+        margin-top: 40px;
+    } 
+}
+@media (max-width: 321px) {
+    .cook__photo-elements {
+        left: -5%;
+        top: 80%;
+    }
+    .cook__photo-img {
+        width: 100%;
+        height: 100%;
     }
 }
 
