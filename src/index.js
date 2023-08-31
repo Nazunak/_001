@@ -1,5 +1,9 @@
 import './index.html';
 import './index.scss';
+
+new Swiper('.feedback__slider', {
+});
+
 // import code from './img/code.png'
 // import { mult, sum } from './modules/calc';
 

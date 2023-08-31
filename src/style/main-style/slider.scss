@@ -1,6 +1,7 @@
 .slider {
     width: 100%;
     background: #081130;
+    overflow: hidden;
 }
 .slider__top-photo {
 }
@@ -26,6 +27,7 @@ letter-spacing: -1px;
 .slider__block {
 }
 .feedback__slider {
+    overflow: hidden;
 }
 .feedback__swiper {
 }
@@ -35,6 +37,7 @@ letter-spacing: -1px;
     gap: 54px;
     justify-content: center;
     padding: 70px 0;
+    // width: 100%;
 }
 .feedback__slide-left {
     max-width: 460px;
