@@ -57,6 +57,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    max-width: 380px;
 }
 .block-phone__input input {
     background: #F2F6FA;
@@ -74,7 +75,11 @@
 .block-phone__button {
     border-radius: 8px;
     background: #FED84C;
-    padding: 29px 41px;
+    padding: 29px 111.5px;
+    max-width: 380px;
+    &:hover {
+        background: #c49e15;
+    }
 }
 .block-phone__href {
     display: flex;
@@ -120,4 +125,105 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; /* 18px */
+}
+
+@media (max-width:1025px)  {
+    .block-phone__form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block-phone {
+        padding: 40px 0;
+    }
+    .block-phone__button {
+        padding: 20px 123.5px;
+    }
+    .block-phone__input {
+        padding: 20px 190px 20px 26px;
+    }
+    .block-phone__button {
+        padding: 30px 111.5px;
+    }
+}
+@media (max-width:769px) {
+    .feedback__slide {
+        padding: 10px 10px 20px;
+        margin-bottom: 40px;
+        // flex-direction: column;
+        // align-items: center;
+    }
+    .slide-right-photo-img {
+        width: 100%;
+    }
+    .feedback__slide-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .feedback__slide-right {
+        display: none;
+    }
+}
+@media (max-width:426px) {
+    .feedback__slide {
+        flex-direction: column;
+    }
+    .feedback__slide-right{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .feedback__slide-right {
+        font-size: 14px;
+    }
+    .slide-left__title-h3 {
+        font-size: 26px;
+    }
+    .block-phone__footer-a, .block-phone__footer-a2 {
+        text-align: center;
+    }
+    .block-phone__href  {
+        padding-left: 10px;
+    }
+    .block-phone__input {
+        max-width: 320px;
+        padding: 20px 20px 20px 26px;
+    }
+    .block-phone__button {
+        max-width: 320px;
+        padding: 30px 81.5px;
+    }
+    .slide-left__href {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:376px) {
+    .block-phone__input {
+        max-width: 320px;
+        padding: 20px 20px 20px 26px;
+    }
+    .block-phone__button {
+        max-width: 320px;
+        padding: 30px 81.5px;
+    }
+    .block-phone__footer-href {
+        gap: 10px;
+    }
+}
+@media (max-width:321px) {
+    .block-phone__input {
+        max-width: 260px;
+        padding: 20px 20px 20px 26px;
+    }
+    .block-phone__button {
+        padding: 20px 60.5px;
+        max-width: 260px;
+    }
+    .block-phone__footer-href {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .block-phone__p {
+        font-size: 16px;
+    }
 }
