@@ -1,6 +1,8 @@
 import './index.html';
 import './index.scss';
 
+console.log('1');
+
 new Swiper('.feedback__slider', {
 });
 
